@@ -6,14 +6,13 @@
 /*   By: jweber <jweber@student.42Lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/04 13:53:22 by jweber            #+#    #+#             */
-/*   Updated: 2026/03/04 13:53:30 by jweber           ###   ########.fr       */
+/*   Updated: 2026/03/04 16:17:39 by jweber           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iostream>
 #include <stdexcept>
-#include "Array.cpp"
-
+#include "Array.hpp"
 
 int	main(void)
 {

@@ -1,45 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Array.cpp                                          :+:      :+:    :+:   */
+/*   Array.tpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jweber <jweber@student.42Lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/04 12:57:45 by jweber            #+#    #+#             */
-/*   Updated: 2026/03/04 13:56:46 by jweber           ###   ########.fr       */
+/*   Updated: 2026/03/04 16:17:50 by jweber           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef ARRAY_TPP
 # define ARRAY_TPP
 
-
-#include <string>
-template<typename T>
-class Array
-{
-	public:
-		Array<T>();
-		Array<T>(unsigned int n);
-		Array<T>(const Array<T>& other);
-		~Array<T>();
-
-		Array<T>&	operator=(const Array<T>& other);
-
-		unsigned int	size();
-		const T&	operator[](unsigned int) const;
-		T&			operator[](unsigned int) ;
-
-	private:
-		T	*data;
-		unsigned int len;
-};
-
-
-#include <cstddef>
-#include <stdexcept>
-#include <iostream>
-#include <sstream>
+# include <string>
+# include <cstddef>
+# include <stdexcept>
+# include <iostream>
+# include <sstream>
 
 template<typename T>
 Array<T>::Array():
