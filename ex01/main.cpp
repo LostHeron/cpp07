@@ -25,6 +25,16 @@ void increment(T& a)
 	a++;
 }
 
+void increment_int(int& a)
+{
+	a++;
+}
+
+void print_str(const std::string& a)
+{
+	std::cout << "str = " << a << ", ";
+}
+
 /*
 class foo
 {
@@ -48,11 +58,10 @@ foo&	operator+=(int);
 int	main(void)
 {
 	//foo a[] = {foo(3), foo(4), foo(1), foo(-1)};
-	int a[] = {1, 3, 6, -1};
+	std::string a[] = {"coucou", "toi" ,"chou"};
 	std::cout << "sizeof(a)/sizeof(foo) = " << sizeof(a)/sizeof(*a) << "\n";
 	iter(a, sizeof(a)/sizeof(*a), print);
 	std::cout << "\n";
-	iter(a, sizeof(a)/sizeof(*a), increment);
-	iter(a, sizeof(a)/sizeof(*a), print);
+	iter(a, sizeof(a)/sizeof(*a), print_str);
 	std::cout << "\n";
 }
