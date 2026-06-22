@@ -23,7 +23,7 @@ int	main(void)
 		int b = 4;
 		std::cout << "a = " << a << "\n";
 		std::cout << "b = " << b << "\n";
-		swap(a, b);
+		::swap(a, b);
 		std::cout << "a = " << a << "\n";
 		std::cout << "b = " << b << "\n";
 	}
@@ -34,7 +34,7 @@ int	main(void)
 		float b = 4;
 		std::cout << "a = " << a << "\n";
 		std::cout << "b = " << b << "\n";
-		swap(a, b);
+		::swap(a, b);
 		std::cout << "a = " << a << "\n";
 		std::cout << "b = " << b << "\n";
 	}

@@ -25,13 +25,13 @@ void	swap(T& l, T& r)
 template<typename T>
 const T& max(const T& l, const T& r)
 {
-	return ((l >= r) ? l : r);
+	return ((l > r) ? l : r);
 }
 
 template<typename T>
 const T& min(const T& l, const T& r)
 {
-	return ((l <= r) ? l : r);
+	return ((l < r) ? l : r);
 }
 
 #endif
