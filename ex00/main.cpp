@@ -26,23 +26,61 @@ int	main(void)
 		::swap(a, b);
 		std::cout << "a = " << a << "\n";
 		std::cout << "b = " << b << "\n";
+		std::cout << "\n\n";
 	}
 
-	// test swap on float
+	// test swap on	string 
 	{
-		float a = 3;
-		float b = 4;
+		std::string a = "cow";
+		std::string b = "horse";
 		std::cout << "a = " << a << "\n";
 		std::cout << "b = " << b << "\n";
 		::swap(a, b);
 		std::cout << "a = " << a << "\n";
 		std::cout << "b = " << b << "\n";
+		std::cout << "\n\n";
 	}
 
 	// test min on ints
-	// test min on floats
+	{
+		int	min = 3;
+		int max = 4;
+		std::cout << "min = " << min << "\n";
+		std::cout << "max = " << max << "\n";
+		std::cout << "::min(min, max) = " << ::min(min, max) << "\n";
+		std::cout << "\n\n";
+	}
+
+	// test min on string
+	{
+		std::string min = "coucou";
+		std::string max = "ahah";
+		std::cout << "min = " << min << "\n";
+		std::cout << "max = " << max << "\n";
+		std::cout << "::min(min, max) = " << ::min(min, max) << "\n";
+		std::cout << "\n\n";
+	}
+
 	// test max on ints
-	// test max on floats
+	{
+		int	min = 3;
+		int max = 4;
+		std::cout << "min = " << min << "\n";
+		std::cout << "max = " << max << "\n";
+		std::cout << "::max(min, max) = " << ::max(min, max) << "\n";
+		std::cout << "\n\n";
+	}
+
+	// test max on string
+	{
+		std::string min = "coucou";
+		std::string max = "ahah";
+		std::cout << "min = " << min << "\n";
+		std::cout << "max = " << max << "\n";
+		std::cout << "::max(min, max) = " << ::max(min, max) << "\n";
+		std::cout << "\n\n";
+	}
+
 }
 
 /* 
