@@ -46,6 +46,7 @@ Array<T>::~Array()
 {
 	len = 0;
 	delete[] data;
+	data = NULL;
 }
 
 template<typename T>
@@ -96,7 +97,7 @@ void	throw_error_index(unsigned int i)
 }
 
 template<typename T>
-unsigned int	Array<T>::size()
+unsigned int	Array<T>::size() const
 {
 	return (this->len);
 }
